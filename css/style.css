@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    font-family: Raleway;
+}
+
+html {
+    font-size: 1vw;
+}
+
+.masker {
+    position: fixed;
+    left: 65vw;
+    top: calc(50% - 5rem);
+    z-index: 100;   
+}
+
+.masker .text {
+    position: absolute  ;
+    font-weight: 900;
+    font-size: 10rem;
+}
+
+.text-play-top {
+    -webkit-clip-path: inset(0 0 49% 0);
+}
+
+.text-play-bottom {
+    -webkit-clip-path: inset(50% 0 0 0);
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.box1 {
+    width: 300px;
+    height: 60vh;
+    left: 20vw;
+}
+
+
+
+
+
+
+
+
+
+.page {
+    display: none; /*tạm thời ẩn cái này đi*/
+    position: absolute;
+    top: calc(50% + (var(--mheight) / 3));
+    left: 89%;
+    background-color: #121212;
+    width: 100vw;
+    --mheight: 1.28rem;
+    height: var(--mheight);
+}
