@@ -7,11 +7,11 @@
 function LaunchPage() {
     setTimeout(() => {
         LaunchSound();
-    }, 80);
+    }, 30);
 
     setTimeout(() => {
         RunAnimation()
-    }, 80);
+    }, 30);
 }
 
 
