@@ -1,13 +1,26 @@
-$(document).ready(function () {
+// $(document).ready(function () {
+//     setTimeout(() => {
+//         RunAnimation()
+//     }, 1000);
+// })
+
+function LaunchPage() {
+    setTimeout(() => {
+        LaunchSound();
+    }, 80);
+
     setTimeout(() => {
         RunAnimation()
-    }, 1000);
-})
+    }, 80);
+}
+
 
 function RunAnimation() {
+    var toLeft = '-=26vw';
+    var duration = 700;
     $('.text-play-top').delay(500).animate({
-        left: '-=26vw',
-    }, 300, ''/**swing or linear */, function() {
+        left: toLeft,
+    }, duration, ''/**swing or linear */, function() {
         $('html').css({'background-color': '#000000'});
         $('.text').css({'color': 'white'});
             $('.masker, .text').animate({
@@ -15,8 +28,8 @@ function RunAnimation() {
     })
 
     $('.text-play-bottom').delay(400).animate({
-        left: '-=26vw',
-    },400)
+        left: toLeft,
+    }, duration + 100)
 }
 
 function SplitAnimation() {
@@ -40,7 +53,9 @@ $('.page').css({
         $('.page').animate({
             height: '100vh',
             top: '0'
-        }, 500)
+        }, 500, function() {
+            $('.remove').remove();
+        })
 
         $('.text-play-top').animate({
             top: '-=100vh',
@@ -50,4 +65,16 @@ $('.page').css({
             top: '+=100vh',
         }, 700)
     })
+}
+
+$('.sr').animate({
+    color: '#121212'
+},400)
+
+$('.page').css({
+    height: 'fit-content'
+})
+
+function LaunchSound() {
+    $('.launchSound').trigger('play');
 }

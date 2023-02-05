@@ -5,6 +5,7 @@
 
 html {
     font-size: 1vw;
+    background-color: #ffffff;
 }
 
 .masker {
@@ -54,9 +55,22 @@ html {
     position: fixed;
     top: calc(50% - 2.4rem);
     left: 89%;
-    background-color: #ffffff; /*#121212*/
+    background-color: #5c5c5c; /*#121212*/
     width: 100vw;
     --mheight: 1.28rem;
     height: var(--mheight);
     z-index: -1;
+    color: white;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+
+
+@media only screen and (max-width: 820px) {
+    .masker .text {
+        top: calc(50% - 2.4rem);
+        position: absolute;
+        font-weight: 900;
+        font-size: 13rem;
+    }
 }
