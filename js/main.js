@@ -50,27 +50,31 @@ $('.page').css({
 })
     $('.page').animate({
         left: '0px',
-    }, 300, function() {
-        $('.page').animate({
+    }, 170, function() {
+        var duration = 500;
+        var duration2 = 700;
+        var delay = 300;
+        $('.page').delay(delay).animate({
             height: '100vh',
             top: '0'
-        }, 500, function() {
+        }, duration, function() {
             $('.remove').remove();
         })
 
-        $('.text-play-top').animate({
-            top: '-=100vh',
-        },700)
+        setTimeout(() => {
+            $('.text-play-top').animate({
+                top: '-=100vh',
+            }, duration2)
+            
+            $('.text-play-bottom').animate({
+                top: '+=100vh',
+            }, duration2)
+        }, delay);
 
-        $('.text-play-bottom').animate({
-            top: '+=100vh',
-        }, 700)
+
     })
 }
 
-$('.sr').animate({
-    color: '#121212'
-},400)
 
 $('.page').css({
     height: 'fit-content'
