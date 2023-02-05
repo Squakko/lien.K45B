@@ -10,7 +10,7 @@ html {
 .masker {
     position: fixed;
     left: 65vw;
-    top: calc(50% - 5rem);
+    top: calc(50% - 9rem);
     z-index: 100;   
 }
 
@@ -51,11 +51,12 @@ html {
 
 .page {
     display: none; /*tạm thời ẩn cái này đi*/
-    position: absolute;
-    top: calc(50% + (var(--mheight) / 3));
+    position: fixed;
+    top: calc(50% - 2.4rem);
     left: 89%;
-    background-color: #121212;
+    background-color: #ffffff; /*#121212*/
     width: 100vw;
     --mheight: 1.28rem;
     height: var(--mheight);
+    z-index: -1;
 }
