@@ -16,7 +16,7 @@ function LaunchPage() {
 
 
 function RunAnimation() {
-    var toLeft = '-=26vw';
+    var toLeft = '-=32vw';
     var duration = 700;
     $('.text-play-top').delay(500).animate({
         left: toLeft,
@@ -36,12 +36,13 @@ function SplitAnimation() {
 // tách 2 mảng text từ play, cho 2 cái chạy ngược phía nhau
 var duration = 250;
 $('.text-play-top').animate({
-        top: '-=1.28rem',
-        left: '-=3vw'
+        top: '-=1.6rem',
+        left: '-=6vw'
     },duration)
 
     $('.text-play-bottom').animate({
-        top: '+=1.28rem',
+        top: '+=1.6rem',
+        left: '+=4vw'
     },duration)
 // page use as breaker
 $('.page').css({

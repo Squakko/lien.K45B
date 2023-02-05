@@ -76,4 +76,9 @@ html {
         font-weight: 900;
         font-size: 13rem;
     }
+
+    .page {
+        display: none;
+        top: calc(50% - 2.6rem);
+    }
 }
