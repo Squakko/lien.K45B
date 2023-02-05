@@ -7,7 +7,7 @@
 function LaunchPage() {
     setTimeout(() => {
         LaunchSound();
-    }, 30);
+    }, 3);
 
     setTimeout(() => {
         RunAnimation()
