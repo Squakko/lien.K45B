@@ -64,22 +64,30 @@ html {
     color: white;
     font-size: 20px;
     overflow-y: scroll;
+    z-index: 10;
 }
 
 
 
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 1000px) {
+
+    .masker {
+        width: fit-content;
+        height: fit-content;
+        top: calc(50% - 10rem);
+    }
+
     .masker .text {
         user-select: none;
-        top: calc(50% - 2.4rem);
         position: absolute;
         font-weight: 900;
-        font-size: 13rem;
     }
+
 
     .page {
         display: none;
-        top: calc(50% - 2.6rem);
+        top: calc(50% - 6rem);
+        height: 2vh;
     }
 }
