@@ -4,7 +4,7 @@
 //     }, 1000);
 // })
 // var viewportWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-var isAnimated = 0;
+var isAnimated = 0; //checkif animate executed
 var viewportWidth = window.innerWidth;
 // const browser = navigator.userAgent; //cái này để test trình duyệt
 // alert(viewportWidth + browser);
